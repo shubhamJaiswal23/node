@@ -56,3 +56,15 @@ fs.unlink('newfile2.txt', (err) => {
     console.log('File-2 Deleted successfully.');
   }
 });
+
+//fs.renameFile() --> method specifies the specific file
+
+//Example-4
+
+fs.rename('newfile1.txt', 'renamefile1.txt', (err) => {
+  if (err) {
+    throw err;
+  } else {
+    console.log('File-1 renamed successfully');
+  }
+});
